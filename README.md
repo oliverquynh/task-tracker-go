@@ -1,6 +1,8 @@
 # Task Tracker
 
-This is a solution written in Go for the task tracker project at https://roadmap.sh/projects/task-tracker
+A simple CLI task tracker written in Go (Practice), built as part of the roadmap.sh projects.
+
+https://roadmap.sh/projects/task-tracker
 
 ## Installation
 
@@ -48,3 +50,10 @@ Use can try these commands in sequence to figure out how this CLI works.
 ./task-tracker delete 3
 ./task-tracker list
 ```
+
+## TODO
+
+It's nice to have/implement
+- Colorful messages (E.g. green for SUCCESS, red for ERROR, blue for INFO)
+- Organize the project structure more clearly instead of a single file.
+- Unit tests
