@@ -17,7 +17,7 @@ cd task-tracker-go
 Build the task-tracker cli program
 
 ```bash
-go run build trask-tracker.go
+go build task-tracker.go
 ```
 
 ## Usage

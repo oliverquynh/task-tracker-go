@@ -123,15 +123,19 @@ func listHandler(tasks []Task, argv []string) int {
 	}
 	var idMaxLen int = len("ID")
 	var descMaxLen int = len("Description")
-	var statusMaxLen int = len(StatusInProgress)
+	var statusMaxLen int = len("Status")
 	for _, task := range tasks {
 		idLen := len(strconv.Itoa(int(task.ID)))
 		descLen := len(task.Description)
+		statusLen := len(task.Status)
 		if idLen > idMaxLen {
 			idMaxLen = idLen
 		}
 		if descLen > descMaxLen {
 			descMaxLen = descLen
+		}
+		if statusLen > statusMaxLen {
+			statusMaxLen = statusLen
 		}
 	}
 
